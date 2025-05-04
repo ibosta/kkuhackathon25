@@ -1,0 +1,21 @@
+vaccine_name,disease_target,species,vaccine_type,application_method,notes
+Parvo Asisi,Parvovirus,Kopek,Viral,Subkutan,Canli veya inaktif formda olabilir
+Karma Asi (DA2PP),"Distemper, Adeno, Parvo, Parainfluenza",Kopek,Kombine Viral,Subkutan,Yavru kopekler icin temel bagisiklik
+FelV Asisi,Feline Leukemia,Kedi,Viral,Subkutan,Risk altindaki kedilere onerilir
+Kuduz Asisi,Kuduz,"Kedi, Kopek, Sigir",Viral,Subkutan/Intramuskuler,"Yasal zorunluluk, zoonotik"
+IBR Asisi,Infeksiyoz Bovine Rhinotracheitis,Sigir,Viral,Intramuskuler,Solunum yolu koruyucu
+Sap Asisi,Sap Hastaliklari,"Sigir, Koyun",Viral,Subkutan,Bolgesel asilama programlarinda
+Newcastle Asisi,Newcastle Disease,Kanatli,Viral,icme suyu/agiz,"Kolay uygulanir, kitle bagisikligi saglar"
+Koksidiyoz Asisi,Koksidiyoz,"Kanatli, Koyun",Paraziter,Oral,Toltrazuril alternatifi
+Brucella Asisi,Bruselloz,"Sigir, Koyun",Bakteriyel,Subkutan,RB51 veya Rev-1 suslari kullanilir
+LSD Asisi,Lumpy Skin Disease,Sigir,Viral,Subkutan,Afrika ve Asya'da yaygin
+Tetanoz Asisi,Tetanoz,"At, Koyun",Bakteriyel,Intramuskuler,Yaralanma sonrasi onerilir
+Mavi Dil Asisi,Bluetongue,Koyun,Viral,Subkutan,Vektor kaynakli viral enfeksiyonlara karsi
+Salmonella Asisi,Salmonelloz,Kanatli,Bakteriyel,Oral,Gastrointestinal koruma saglar
+Leptospiroz Asisi,Leptospiroz,"Kopek, Sigir",Bakteriyel,Subkutan,Zoonotik hastaliklara karsi bagisiklik
+Clostridium Asisi,Clostridial hastaliklar,"Koyun, Keci",Bakteriyel,Subkutan,"Enterotoksemi, tetanoz vb. hastaliklara karsi"
+Pox Asisi,Kanatli cicek,Kanatli,Viral,Deri alti (kanat zarina),Yaygin tavuk hastaliklarina karsi koruma
+IBD Asisi,Infeksiyoz Bursa Hastaliklari,Kanatli,Viral,Oral,Gumboro hastaliklari icin uygulanir
+FIP Asisi,Feline Infectious Peritonitis,Kedi,Viral,Intranazal,Koruyuculugu tartismalidir
+Canine Influenza Asisi,Canine Influenza,Kopek,Viral,Subkutan,Solunum yolu hastaliklarina karsi
+Rabies Asisi (Oral),Kuduz,Yaban hayati,Viral,Agiz yoluyla yem,Doga kosullarinda uygulama icin

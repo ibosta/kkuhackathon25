@@ -1,0 +1,21 @@
+drug_name,active_substance,usage_area,species,administration_route,notes
+Amoksisilin,Amoxicillin,Antibiyotik,"Kedi, Kopek, Sigir",Oral/Enjeksiyon,Genis spektrum
+Enrofloksasin,Enrofloxacin,Antibakteriyel,"Kanatli, Kedi, Kopek",Oral,Fluorokinolon grubu
+Ivermektin,Ivermectin,Antiparaziter,"Koyun, Keci, Sigir, At",Enjeksiyon,Ic ve dis parazitler
+Meloksikam,Meloxicam,Antienflamatuvar,"Kedi, Kopek",Oral/Enjeksiyon,NSAID grubu
+Ketoprofen,Ketoprofen,Analjezik/NSAID,"At, Sigir",Enjeksiyon,Agri ve yangi kontrolu
+Florfenikol,Florfenicol,Antibiyotik,"Sigir, Kanatli",Enjeksiyon,Solunum yolu enfeksiyonlari
+Deksametazon,Dexamethasone,Kortikosteroid,Coklu tur,Enjeksiyon,"Sok, alerji, iltihap"
+Albendazol,Albendazole,Anthelmintik,"Koyun, Keci,sigir",Oral,Yassi ve yuvarlak solucanlar
+Toltrazuril,Toltrazuril,Antikoksidiyel,"Kanatli, Koyun",Oral,Koksidiyoz tedavisi
+Furosemid,Furosemide,Diuretik,"Kopek, At",Enjeksiyon,Odem ve kalp yetmezligi
+Lidokain,Lidocaine,Lokal Anestezik,Coklu tur,Lokal,Mudahale oncesi uyusturma
+Marbofloksasin,Marbofloxacin,Antibakteriyel,"Kedi, Kopek",Oral/Enjeksiyon,Genis spektrumlu AB
+Tylosin,Tylosin,Makrolid Antibiyotik,"Kanatli,sigir",Oral/Enjeksiyon,Mikoplazma enfeksiyonlari
+Oxytetracycline,Oxytetracycline,Antibiyotik,Coklu tur,Enjeksiyon,Solunum yolu hastaliklari
+Cloprostenol,Cloprostenol,Reproduktif hormon,Sigir,Enjeksiyon,Eustrus senkronizasyonu
+Carprofen,Carprofen,NSAID,Kopek,Oral,Agri ve iltihap tedavisi
+Fenbendazol,Fenbendazole,Anthelmintik,"Kedi, Kopek",Oral,Dis parazit tedavisi
+Sulfadimetoksin,Sulfadimethoxine,Antikoksidiyel,Kanatli,Oral,Koksidiyoz kontrolÃu
+Tilmicosin,Tilmicosin,Antibakteriyel,Sigir,Enjeksiyon,Pneumoni tedavisi
+Ketamin,Ketamine,Anestezik,"Kedi, Kopek",Enjeksiyon,Cerrahi mudahalelerde kullanilir

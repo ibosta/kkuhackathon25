@@ -1,0 +1,55 @@
+Veteriner e-nabız sistemi için bir tasarım ve işlevsellik önerisi oluşturabiliriz. Aşağıda, sistemin ana bileşenlerini ve işlevlerini özetleyen bir plan bulunmaktadır:
+
+### Sistem Bileşenleri
+
+1. **Kullanıcı Rolleri**
+   - **Veteriner**: Hasta kaydı, aşı takibi, stok kontrolü, reçete yazma.
+   - **Vatandaş**: TC kimlik numarası ile giriş yapma, hayvan bilgilerini görüntüleme, aşı takvimini takip etme.
+
+2. **Veritabanı**
+   - **Hayvanlar**: Hayvan ID, sahip TC kimlik numarası, tür, cins, doğum tarihi, sağlık durumu.
+   - **Aşılar**: Aşı ID, aşı adı, aşı tarihi, sonraki aşı tarihi, hayvan ID.
+   - **Reçeteler**: Reçete ID, hayvan ID, ilaçlar, yazım tarihi, veteriner ID.
+   - **Stok**: İlaç ID, ilaç adı, mevcut miktar, minimum stok seviyesi.
+
+### Ana İşlevler
+
+1. **Veteriner İşlevleri**
+   - **Hasta Kaydı**: Yeni hayvan kaydı oluşturma, mevcut hayvanları güncelleme.
+   - **Aşı Takibi**: Hayvanların aşı geçmişini görüntüleme, yeni aşı ekleme.
+   - **Stok Kontrolü**: Mevcut ilaç stoklarını görüntüleme, stok güncelleme.
+   - **Reçete Yazma**: Hayvan için reçete oluşturma, reçeteyi kaydetme ve stoktan düşme işlemi.
+
+2. **Vatandaş İşlevleri**
+   - **Giriş Yapma**: TC kimlik numarası ile sisteme giriş.
+   - **Hayvan Bilgileri**: Kayıtlı hayvanlarını görüntüleme.
+   - **Aşı Takvimi**: Hayvanlarının aşı takvimini görüntüleme, hatırlatıcılar alma.
+
+### Kullanıcı Arayüzü
+
+1. **Veteriner Arayüzü**
+   - Ana sayfa: Hasta kaydı, aşı takibi, stok kontrolü, reçete yazma butonları.
+   - Hasta kaydı formu: Hayvan bilgilerini girmek için alanlar.
+   - Aşı takibi sayfası: Aşı geçmişi ve yeni aşı ekleme alanı.
+   - Stok kontrol sayfası: Mevcut stok durumu ve güncelleme seçenekleri.
+   - Reçete yazma sayfası: İlaç seçimi ve reçete oluşturma alanı.
+
+2. **Vatandaş Arayüzü**
+   - Giriş sayfası: TC kimlik numarası girişi.
+   - Hayvan bilgileri sayfası: Kayıtlı hayvanların listesi.
+   - Aşı takvimi sayfası: Hayvanların aşı tarihleri ve hatırlatıcılar.
+
+### Güvenlik ve Erişim Kontrolü
+- Kullanıcı doğrulama: TC kimlik numarası ile giriş.
+- Rol tabanlı erişim kontrolü: Veterinerler ve vatandaşlar için farklı erişim seviyeleri.
+
+### Teknolojik Altyapı
+- **Backend**: Python (Django/Flask), Node.js, Ruby on Rails gibi bir framework.
+- **Frontend**: HTML, CSS, JavaScript (React, Vue.js gibi bir kütüphane/framework).
+- **Veritabanı**: MySQL, PostgreSQL veya MongoDB.
+
+### Ek Özellikler
+- **Bildirim Sistemi**: Aşı tarihleri yaklaşırken kullanıcıya bildirim gönderme.
+- **Raporlama**: Aşı ve stok durumu raporları oluşturma.
+
+Bu tasarım, veteriner e-nabız sisteminin temel işlevlerini ve bileşenlerini kapsamaktadır. İhtiyaçlarınıza göre daha fazla detay ekleyebilir veya mevcut bileşenleri değiştirebilirsiniz.

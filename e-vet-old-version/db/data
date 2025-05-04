@@ -1,0 +1,63 @@
+Veteriner e-nabız sistemi için bir taslak oluşturmak oldukça faydalı olacaktır. Aşağıda, sistemin ana bileşenlerini ve işlevlerini belirten bir yapı önerisi sunuyorum:
+
+### 1. Kullanıcı Rolleri
+- **Veteriner**: Hasta kaydı yapabilir, aşı takibi yapabilir, stok kontrolü yapabilir, reçete yazabilir.
+- **Vatandaş**: TC kimlik numarası ile giriş yapabilir, hayvan bilgilerini görebilir ve aşı takvimini takip edebilir.
+
+### 2. Ana Bileşenler
+#### 2.1. Kullanıcı Girişi
+- **Veteriner Girişi**: Kullanıcı adı ve şifre ile giriş.
+- **Vatandaş Girişi**: TC kimlik numarası ile giriş.
+
+#### 2.2. Veteriner Modülü
+- **Hasta Kaydı**: 
+  - Hayvanın bilgileri (Türü, Yaşı, Cinsi, Sahibi vb.)
+  - Sahip bilgileri (Ad, Soyad, TC Kimlik No, İletişim Bilgileri)
+  
+- **Aşı Takibi**:
+  - Aşı türleri ve tarihleri
+  - Aşı geçmişi
+  - Hatırlatıcı bildirimler
+
+- **Stok Kontrolü**:
+  - Aşı ve ilaç stok durumu
+  - Stok güncellemeleri
+  - Stok uyarıları (düşük stok)
+
+- **Reçete Yazma**:
+  - Reçete oluşturma
+  - Reçete geçmişi
+  - Stoktan düşme işlemi
+
+#### 2.3. Vatandaş Modülü
+- **Hayvan Bilgileri**:
+  - Kayıtlı hayvanları görüntüleme
+  - Hayvanın sağlık durumu ve geçmişi
+
+- **Aşı Takvimi**:
+  - Aşı tarihleri ve hatırlatıcılar
+  - Aşı geçmişi
+
+### 3. Veritabanı Tasarımı
+- **Kullanıcılar Tablosu**: Kullanıcı bilgileri (ID, Ad, Soyad, TC Kimlik No, Rol, Şifre)
+- **Hayvanlar Tablosu**: Hayvan bilgileri (ID, Tür, Yaş, Cins, Sahip ID)
+- **Aşılar Tablosu**: Aşı bilgileri (ID, Aşı Türü, Tarih, Hayvan ID)
+- **Reçeteler Tablosu**: Reçete bilgileri (ID, Hayvan ID, Tarih, İlaçlar)
+- **Stok Tablosu**: Stok bilgileri (ID, Ürün Adı, Miktar, Son Kullanma Tarihi)
+
+### 4. Teknoloji Seçimi
+- **Frontend**: HTML, CSS, JavaScript (React, Vue.js veya Angular)
+- **Backend**: Node.js, Python (Django veya Flask), Java (Spring)
+- **Veritabanı**: MySQL, PostgreSQL veya MongoDB
+
+### 5. Güvenlik
+- Kullanıcı doğrulama ve yetkilendirme
+- Veritabanı güvenliği
+- SSL sertifikası ile güvenli bağlantı
+
+### 6. Ek Özellikler
+- Mobil uyumlu tasarım
+- Kullanıcı dostu arayüz
+- Bildirim sistemi (e-posta/SMS)
+
+Bu taslak, veteriner e-nabız sisteminin temel bileşenlerini ve işlevlerini kapsamaktadır. Projenin gereksinimlerine göre detaylandırılabilir ve özelleştirilebilir. Herhangi bir aşamada daha fazla bilgi veya yardım isterseniz, lütfen belirtin!

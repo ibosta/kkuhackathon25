@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    container_name: e-vet-postgres
+    environment:
+      POSTGRES_DB: e_vet_db
+      POSTGRES_USER: ibrahimtaskiran
+      POSTGRES_PASSWORD: your_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - e-vet-network
+
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: e-vet-api
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: e_vet_db
+      DB_USER: ibrahimtaskiran
+      DB_PASSWORD: postgres123
+      JWT_SECRET: gizli-anahtar-123
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - e-vet-network
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: e-vet-client
+    environment:
+      REACT_APP_API_URL: http://localhost:3000/api
+    ports:
+      - "3001:3000"
+    depends_on:
+      - api
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - e-vet-network
+
+networks:
+  e-vet-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

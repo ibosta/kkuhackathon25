@@ -1,0 +1,56 @@
+Veteriner e-nabız sistemi için bir tasarım ve işlevsellik önerisi oluşturabiliriz. Aşağıda, sistemin ana bileşenleri ve işlevleri hakkında bir genel bakış sunuyorum:
+
+### Sistem Bileşenleri
+
+1. **Kullanıcı Rolleri**
+   - **Veteriner**: Hasta kaydı yapma, hasta takibi, aşı takibi, stok kontrolü, reçete yazma.
+   - **Vatandaş**: TC kimlik numarası ile giriş yapma, hayvan bilgilerini görüntüleme, aşı takvimini kontrol etme.
+
+2. **Veritabanı**
+   - **Hayvanlar**: Hayvan ID, tür, cins, yaşı, sahibi (vatandaş ID), sağlık durumu.
+   - **Aşılar**: Aşı ID, aşı adı, aşı tarihi, sonraki aşı tarihi, hayvan ID.
+   - **Reçeteler**: Reçete ID, hayvan ID, ilaçlar, tarih, veteriner ID.
+   - **Stok**: İlaç adı, miktar, son kullanma tarihi.
+
+### Ana İşlevler
+
+1. **Veteriner İşlevleri**
+   - **Hasta Kaydı**: Yeni hayvan kaydı oluşturma, mevcut hayvanları güncelleme.
+   - **Hasta Takibi**: Hayvanın sağlık durumu, geçmiş aşılar ve tedavi geçmişi.
+   - **Aşı Takibi**: Aşı takvimini görüntüleme ve güncelleme.
+   - **Stok Kontrolü**: Mevcut ilaç ve aşı stoklarını görüntüleme, stok güncelleme.
+   - **Reçete Yazma**: Hayvana reçete yazma ve stoktan düşme işlemi.
+
+2. **Vatandaş İşlevleri**
+   - **Giriş Yapma**: TC kimlik numarası ile sisteme giriş.
+   - **Hayvan Bilgileri**: Kayıtlı hayvanlarını görüntüleme.
+   - **Aşı Takvimi**: Hayvanlarının aşı takvimini görüntüleme.
+
+### Kullanıcı Arayüzü
+
+1. **Veteriner Arayüzü**
+   - Ana sayfa: Hasta kaydı, hasta takibi, aşı takibi, stok kontrolü, reçete yazma seçenekleri.
+   - Hasta kaydı formu: Hayvan bilgileri girişi.
+   - Aşı takibi sayfası: Aşı geçmişi ve gelecek aşılar.
+   - Stok kontrol sayfası: Mevcut stok durumu ve güncelleme seçenekleri.
+   - Reçete yazma formu: İlaç seçimi ve yazım işlemi.
+
+2. **Vatandaş Arayüzü**
+   - Giriş sayfası: TC kimlik numarası ile giriş.
+   - Hayvan bilgileri sayfası: Kayıtlı hayvanların listesi.
+   - Aşı takvimi sayfası: Hayvanların aşı takvimleri.
+
+### Teknolojik Altyapı
+
+- **Backend**: Python (Django/Flask), Node.js, Ruby on Rails gibi bir framework.
+- **Frontend**: HTML, CSS, JavaScript (React, Vue.js veya Angular).
+- **Veritabanı**: PostgreSQL, MySQL veya MongoDB.
+- **API**: RESTful API ile veri alışverişi.
+
+### Güvenlik
+
+- Kullanıcı kimlik doğrulama ve yetkilendirme.
+- Veritabanı güvenliği ve veri şifreleme.
+- Kullanıcı verilerinin gizliliği için gerekli önlemler.
+
+Bu tasarım, veteriner e-nabız sisteminin temel işlevlerini ve bileşenlerini kapsamaktadır. İhtiyaçlarınıza göre daha fazla detay ekleyebilir veya belirli alanları genişletebilirsiniz. Projenin geliştirilmesi aşamasında, kullanıcı geri bildirimlerini de dikkate almak önemlidir.

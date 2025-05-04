@@ -1,0 +1,49 @@
+Veteriner e-nabız sistemi için bir tasarım ve işlevsellik önerisi oluşturabiliriz. Aşağıda, sistemin ana bileşenleri ve işlevleri hakkında bir genel bakış sunuyorum:
+
+### Sistem Bileşenleri
+
+1. **Kullanıcı Rolleri**
+   - **Veteriner**: Hasta kaydı, aşı takibi, stok kontrolü, reçete yazma.
+   - **Vatandaş**: TC kimlik numarası ile giriş yapma, hayvan bilgilerini görüntüleme, aşı takvimini takip etme.
+
+2. **Veritabanı**
+   - **Hayvanlar**: Hayvan ID, türü, yaşı, sahibi (vatandaş ID), sağlık durumu, aşı geçmişi.
+   - **Aşılar**: Aşı ID, aşı adı, aşı tarihi, sonraki aşı tarihi, hayvan ID.
+   - **Reçeteler**: Reçete ID, veteriner ID, hayvan ID, ilaçlar, tarih.
+   - **Stok**: İlaç ID, ilaç adı, miktar, son kullanma tarihi.
+
+### Ana İşlevler
+
+1. **Veteriner İşlevleri**
+   - **Hasta Kaydı**: Yeni hayvan kaydı oluşturma, mevcut hayvanları güncelleme.
+   - **Aşı Takibi**: Hayvanların aşı geçmişini görüntüleme, yeni aşı ekleme.
+   - **Stok Kontrolü**: Mevcut ilaç ve aşı stoklarını görüntüleme, stok güncelleme.
+   - **Reçete Yazma**: Hayvan için reçete oluşturma, reçeteyi kaydetme ve stoktan düşme işlemi.
+
+2. **Vatandaş İşlevleri**
+   - **Giriş Yapma**: TC kimlik numarası ile sisteme giriş.
+   - **Hayvan Bilgileri**: Kayıtlı hayvanlarını görüntüleme.
+   - **Aşı Takvimi**: Hayvanlarının aşı takvimini görüntüleme, geçmiş aşıları kontrol etme.
+
+### Kullanıcı Arayüzü
+
+- **Giriş Sayfası**: Kullanıcıların TC kimlik numarası ile giriş yapabileceği bir sayfa.
+- **Ana Menü**: Kullanıcı rolüne göre farklı seçenekler sunan bir ana menü.
+- **Hayvan Kaydı Sayfası**: Veterinerlerin yeni hayvan kaydı yapabileceği bir form.
+- **Aşı Takibi Sayfası**: Aşı geçmişinin görüntülendiği ve yeni aşıların eklendiği bir sayfa.
+- **Stok Yönetimi Sayfası**: Stok durumunun görüntülendiği ve güncellendiği bir sayfa.
+- **Reçete Yazma Sayfası**: Veterinerlerin reçete yazabileceği bir form.
+
+### Teknoloji Yığını
+
+- **Frontend**: HTML, CSS, JavaScript (React, Vue.js veya Angular gibi bir framework ile).
+- **Backend**: Node.js, Python (Django veya Flask), PHP (Laravel).
+- **Veritabanı**: MySQL, PostgreSQL veya MongoDB.
+- **API**: RESTful API ile veri alışverişi.
+
+### Güvenlik
+
+- **Kimlik Doğrulama**: Kullanıcıların güvenli bir şekilde giriş yapabilmesi için JWT veya OAuth gibi yöntemler.
+- **Veri Güvenliği**: Kullanıcı verilerinin ve hayvan bilgilerin güvenli bir şekilde saklanması.
+
+Bu tasarım, veteriner e-nabız sisteminin temel işlevselliklerini ve bileşenlerini kapsamaktadır. İhtiyaçlarınıza göre daha fazla detay ekleyebilir veya mevcut bileşenleri değiştirebilirsiniz. Projenin geliştirilmesi aşamasında, kullanıcı geri bildirimlerini almak ve sistemin kullanılabilirliğini artırmak için testler yapmak da önemlidir.
